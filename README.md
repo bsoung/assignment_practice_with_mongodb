@@ -1,5 +1,5 @@
 # assignment_practice_with_mongodb
-
+which nodemon > /dev/null && nodemon app.js || node app.js
 
 Querying with the MongoDB shell
 
@@ -28,5 +28,6 @@ Import the data from the `__restaurants__.js` file.
 $ mongoimport --db test --collection restaurants --file __restaurants__.js
 ```
 
+mongoimport -h ds017155.mlab.com:17155 -d practice_with_mongo -c product -u bsoung -p 123 --file __products__.js
 
-
+mongo ds017155.mlab.com:17155/practice_with_mongo -u bsoung -p 123
